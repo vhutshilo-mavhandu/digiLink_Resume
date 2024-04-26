@@ -1,0 +1,212 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>dropdown Menu</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="menu-bar">
+      <img
+        src="https://www.digilink.africa/wp-content/uploads/2020/12/Digilink-Logo-small.png"
+        alt="HTML5 Icon"
+        height="40"
+      />
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+    <!-- Start Landing Page -->
+    <div class="landing-page">
+      <div class="content">
+        <div class="container">
+          <div class="info">
+            <h1><em>Infrastructure Ops Engineer</em></h1>
+            <p>
+              Experienced Full Stack Software Engineer with years of hands-on
+              expertise in designing, implementing, and managing cloud
+              solutions. Adept at leveraging AWS services to optimize
+              infrastructure, enhance scalability, and streamline DevOps
+              processes.
+            </p>
+            <button id="cv_btn">Download</button>
+          </div>
+          <div class="image">
+            <img
+              src="https://media.licdn.com/dms/image/D4D03AQHThAZBouB7iA/profile-displayphoto-shrink_800_800/0/1682068572806?e=1719446400&v=beta&t=UjuK0-yVk8aJTYDFK9Xwq5HplQ4ZWfLbM-uglJ4FlC4"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="resume">
+      <div class="fill-blue">CAREER</div>
+      <div class="left-column">
+        <div class="substrate">
+          <h2>Career</h2>
+          <div class="left-blue">
+            <div class="time-period-left-blue"></div>
+            <h3>
+              <span class="time-period-right-blue">2013 - Now</span>
+            </h3>
+            <h4>Work</h4>
+            <p>
+              I am turning at one Software Company in 2013 as Asp.net Developer.
+            </p>
+            <div class="time-period-left-blue"></div>
+            <h3>
+              <span class="time-period-right-blue">2010 - 2013</span>
+            </h3>
+            <h4>M.C.A.</h4>
+            <p>Learn CSS, HTML, Javascript</p>
+            <div class="time-period-left-blue"></div>
+            <h3>
+              <span class="time-period-right-blue">2007 - 2010</span>
+            </h3>
+            <h4>B.C.A</h4>
+            <p>
+              I have Completed My Bachelors in Computer Application from Rajkot.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="right-column">
+        <div class="substrate gradient-blue font-blue">
+          <h2>About Me</h2>
+          <h3>Hay, I'm Abhay Makadia . . .</h3>
+          <div class="p">
+            A 24 year old Indian blogger, Developer, illustrator and a lover of
+            Designs and structure of coding. I took up a Masters in Computer
+            Application and soon after earning my degree, I worked
+            professionally as a .net developer Developer. I m Beginner. we all
+            are beginners at one point, so Learn as much as you can. I blogged
+            about anything which can be coded. I write what i learn. I love
+            researching, discovering new things, playing around with codes and
+            Designs, just to see what happens. So I learned lots of things about
+            design. by Profession i m not designer but I want to be.
+          </div>
+        </div>
+        <div class="substrate">
+          <h2>Skill I</h2>
+          <h3>Web Development</h3>
+          <ul class="skills">
+            <li class="skill">
+              <span>Asp.net C#</span>
+              <div class="b">
+                <span class="eighty" style="width: 90%"></span>
+              </div>
+            </li>
+            <li class="skill">
+              <span>HTML</span>
+              <div class="b">
+                <span class="eighty" style="width: 70%"></span>
+              </div>
+            </li>
+            <li class="skill">
+              <span>CSS</span>
+              <div class="b">
+                <span class="eighty" style="width: 60%"></span>
+              </div>
+            </li>
+            <li class="skill">
+              <span>JavaScript</span>
+              <div class="b">
+                <span class="eighty" style="width: 50%"></span>
+              </div>
+            </li>
+            <li class="skill">
+              <span>Jquery</span>
+              <div class="b">
+                <span class="eighty" style="width: 30%"></span>
+              </div>
+            </li>
+          </ul>
+          <div class="paper-clip"></div>
+        </div>
+      </div>
+
+      <div class="floatlimit"></div>
+    </div>
+    <!-- form -->
+
+    <div id="contact-form" class="contact-form">
+      <h1 class="contact-form_title">Contact Form</h1>
+      <div class="separator"></div>
+
+      <div v-if="isSending" class="loading">Sendig...</div>
+
+      <form class="form" @submit="onSubmit">
+        <input
+          required
+          name="name"
+          v-model="contact.name"
+          placeholder="Name"
+          type="text"
+          autocomplete="off"
+        />
+        <input
+          required
+          name="email"
+          v-model="contact.email"
+          placeholder="E-mail"
+          type="email"
+          autocomplete="off"
+        />
+        <textarea
+          name="message"
+          v-model="contact.message"
+          rows="4"
+          placeholder="Message"
+        ></textarea>
+        <button class="button">Send</button>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.4"></script>
+    <script src="app.js"></script>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; 2017 All Rights Reserved by
+              <a href="#">Scanfcode</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+              </li>
+              <li>
+                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>
